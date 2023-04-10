@@ -440,7 +440,7 @@ main {
     margin-left: 19px !important;
     position: fixed;
     bottom: 261px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .footer {
