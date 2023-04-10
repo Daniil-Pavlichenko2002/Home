@@ -246,73 +246,56 @@ main {
 }
 
 .project {
+}
+.project__items {
+    display: flex;
+    flex-wrap: wrap;
+}
+.project__item {
+    display: flex;
+    flex-direction: column;
+    height: 494px;
+    margin-top: 42px;
+}
+.project__item1 {
+    width: 780px;
+}
+.project__item1,
+.project__item2 {
     margin-top: 47px;
 }
 
-.project__items {
-    /* display: flex;
-    flex-wrap: wrap; */
-}
-.project__items__block1{
-    display: flex;
-}
 .project__item img {
-    max-width: 100%;
+    height: 437px;
 }
 
-.project__item p {
-    font-style: normal;
+.project__item2 {
+    width: 382px;
+    height: 493px;
+    margin-left: 18px;
+}
+
+.project__item3, 
+.project__item4 {
+    width: 582px;
+}
+.project__item4 {
+    margin-left: 18px;
+}
+.project__item6,
+.project__item7{
+    margin-left: 20px;
+}
+.project__item a {
+    margin-top: 21px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    /* text-decoration-color: #000000; */
+    color: #000000;
+    text-underline-offset: 7px;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
-    margin-top: 21px;
-    margin-bottom: 7px;
-    color: #000000;
-}
-
-.project__item {
-    margin-bottom: 42px;
-}
-
-.project__items__block1 .project__item:nth-child(1) {
-    margin-right: 18px;
-    max-width: 67%;
-}
-.project__item__block1 .project__item:nth-child(2) {
-    max-width: 33%;
-}
-
-/* .project__item:nth-child(3) {
-    margin-right: 18px;
-} */
-.project__items__block2{
-    display: flex;
-}
-.project__items__block2 .project__item:nth-child(1) {
-    margin-right: 20px;
-    /* max-width: 380px; */
-    margin-bottom: 0;
-    max-width: 50%;
-}
-
-.project__items__block2 .project__item:nth-child(2) {
-    /* max-width: 380px; */
-    /* margin-right: 20px; */
-    /* margin-bottom: 0; */
-    max-width: 50%;
-}
-.project__items__block3 {
-    display: flex;
-}
-.project__items__block3 .project__item {
-    max-width: 33.3%;
-}
-
-.project__items__block3 .project__item:nth-child(2) {
-    margin-left: 20px;
-}
-.project__items__block3 .project__item:nth-child(3) {
-    margin-left: 20px;
 }
 
 .project__button {
@@ -524,25 +507,66 @@ main {
     .tasks__categories a{
         margin-right: 40px;
     }
-    .project {
-    }
-    .project__items {
-    }
-    .project__items__block1 {
-    }
-    .project__item {
-    }
-    .project__items__block2 {
-    }
-    .project__items__block3 {
-    }
-    .project__button {
-    }
     .services__button{
         display: none;
     }
     .prefooter{
         position: relative;
+    }
+    .project__items {
+    }
+    .project__item {
+        margin-left: 20px;
+        height: 348px;
+    }
+    .project__item img {
+        height: 291px;
+        width: 100%;
+    }
+    .project__item a {
+        margin-top: 20;
+    }
+    .project__item1 {
+        margin-left: 0;
+        width: 505px;
+    }
+    .item__img1 {
+    }
+    .project__item2{
+        width: 355px;
+    }
+    .item__img2 {
+    }
+    .project__item3 {
+        margin-left: 0;
+    }
+    .item__img3 {
+    }
+    .project__item4 {
+    }
+    .item__img4 {
+    }
+    .project__item3,
+    .project__item4 {
+        width: 430px;
+    }
+    .project__item5{
+        margin-left: 0;
+    }
+    .project__item5,
+    .project__item6,
+    .project__item7 {
+        width: 280px;
+    }
+    .item__img5 {
+    }
+    .project__item6 {
+    }
+    .item__img6 {
+    }
+    .project__item7 {
+    }
+    .item__img7 {
     }
     .services__button1{
         margin-top: 7px;
@@ -567,10 +591,6 @@ main {
     }
 }
 @media(max-width: 1000px) {
-    .wrapper{
-        /* max-width: 640px; */
-        /* max-width: 100%; */
-    }
     .container{
         max-width: 580px;
     }
@@ -583,6 +603,63 @@ main {
     }
     .tasks__categories {
         margin-top: 59px;
+    }
+    .project__item {
+        margin-left: 20px;
+        height: 348px;
+    }
+    .project__item img {
+        height: 291px;
+        width: 100%;
+    }
+    .project__item a{
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 22px
+    }
+
+    .project__item1 {
+        margin-left: 0;
+        width: 380px;
+    }
+    .item__img {
+        object-fit: cover;
+    }
+    .project__item2{
+        width: 177px;
+    }
+    .item__img2 {
+    }
+    .project__item3 {
+        margin-left: 0;
+    }
+    .item__img3 {
+    }
+    .project__item4 {
+    }
+    .item__img4 {
+    }
+    .project__item3,
+    .project__item4 {
+        width: 280px;
+    }
+    .project__item5{
+        margin-left: 0;
+    }
+    .project__item5,
+    .project__item6,
+    .project__item7 {
+        width: 180px;
+    }
+    .item__img5 {
+    }
+    .project__item6 {
+    }
+    .item__img6 {
+    }
+    .project__item7 {
+    }
+    .item__img7 {
     }
     .prefooter{
         position: relative;
@@ -633,10 +710,6 @@ main {
     }
 }
 @media(max-width: 640px) {
-    .wrapper{
-        /* max-width: 640px; */
-        /* max-width: 100%; */
-    }
     .container{
         max-width: 330px;
         position: relative;
@@ -666,29 +739,66 @@ main {
         margin-left: 25px;
         margin-right: 25px;
     }
-    .project {
+    .project__items{
         margin-top: 23px;
     }
-    .project__items {
-    }
-    .project__items__block1 {
-        flex-wrap: wrap;
-    }
-    .project__items__block1 .project__item:nth-child(1){
-        width: 330px;
-        height: 278px;
-        /* object-fit: cover; */
-    }
-    .project__items__block1 .project__item img:nth-child(1){
-        height: 232px;
-    }
     .project__item {
+        margin-left: 20px;
+        height: 348px;
     }
-    .project__items__block2 {
+    .project__item img {
+        height: 232px;
+        width: 100%;
     }
-    .project__items__block3 {
+    .project__item a{
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 22px
     }
-    .project__button {
+
+    .project__item1,
+    .project__item2,
+    .project__item5 {
+        margin-top: 0;
+        margin-left: 0;
+        height: 278px;
+        width: 330px;
+    }
+    .item__img {
+        object-fit: cover;
+    }
+    .project__item2{
+        margin-top: 15px;
+    }
+    .item__img2 {
+    }
+    .project__item3 {
+        margin-left: 0;
+    }
+    .project__item3,
+    .project__item4 {
+        width: 155px;
+        height: 211px;
+        margin-top: 15px;
+    }
+    .project__item5{
+        margin-top: 15px;
+    }
+    .project__item6,
+    .project__item7 {
+        margin-top: 15px;
+        margin-left: 0;
+        width: 155px;
+        height: 211px;
+    }
+    .project__item7 {
+        margin-left: 20px;
+    }
+    .project__button{
+        margin-top: 18px;
+    }
+    .project button{
+        margin-top: 0;
     }
     .prefooter {
         background: #F2F2F2;
