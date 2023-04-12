@@ -431,6 +431,7 @@ main {
     background: #F23838;
     border-radius: 38px;
 }
+.services__button button:hover{background-color: #303030;}
 .services__button1 button{
     display: none;
     font-weight: 500;
@@ -453,6 +454,7 @@ main {
     background: #F23838;
     border-radius: 38px;
 }
+.services__button1 button:hover{background-color: #303030;}
 .button__fixed{
     display: block;
     margin: 0 !important;
@@ -474,7 +476,7 @@ main {
     z-index: 2;
 }
 .footer__container {
-    padding-left: 129px;
+    /* padding-left: 129px; */
     padding-top: 83px;
     padding-bottom: 83px;
 }
@@ -859,7 +861,10 @@ main {
         line-height: 20px
     }
     .services__button{
-        display: block;
+        margin: 0;
+    }
+    .services__button button{
+        width: 330px;
         margin: 23px auto;
     }
     .services__button1{
