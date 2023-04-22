@@ -4,19 +4,14 @@ document.querySelector('.header__burger').addEventListener('click', function() {
     document.querySelector('body').classList.toggle('noscroll');
     document.querySelector('.footer').classList.toggle('footer__fixed');
     document.querySelector('.services__button').classList.toggle('button__fixed');
+    document.querySelector('.header__shadow').classList.toggle('open');
+    document.querySelector('.button').classList.toggle('button__margin0');
     })
-
-// let arr = [1, 2, 3 ,4, 5]
-// let newArr = arr.filter((item) => item !== 1 )
-// console.log(newArr)
-
-// let names = 'Вася, Петя, Маша';
-
-// let arr = names.split(', ');
-// console.log(arr )
-
-const str = ["background-color"]
-let f = (str) => {
-  return str.split('')
-}
-f()
+document.querySelector('.header__shadow').addEventListener('click', function() {
+      document.querySelector('.header__shadow').classList.remove('open');
+      document.querySelector('.header__meny').classList.toggle('open');
+      document.querySelector('.header__burger').classList.remove('active');
+      document.querySelector('body').classList.remove('noscroll');
+      document.querySelector('.footer').classList.remove('footer__fixed');
+      document.querySelector('.services__button').classList.remove('button__fixed');
+})

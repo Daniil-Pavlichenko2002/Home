@@ -184,7 +184,7 @@ header {}
 .open{
     display: block !important;
 }
-.header__meny {
+.header__shadow {
     display: none;
     position: fixed;
     top: 0;
@@ -194,13 +194,20 @@ header {}
     z-index: 2;
     background: rgba(48, 48, 48, 0.5);
 }
+.header__meny{
+    display: none;
+    position: fixed;
+    top: 75px;
+    left: auto;
+    z-index: 2;
+}
 .header__list {
     width: 330px;
     height: 157px;
     box-sizing: border-box;
     background: #FFFFFF;
     border: 2px solid #000000;
-    margin: 75px auto;
+    /* margin: 75px auto; */
     display: flex;
     flex-direction: column;
     padding: 8px 11px;
@@ -458,12 +465,13 @@ main {
 .button__fixed{
     display: block;
     margin: 0 !important;
-    margin-left: 19px !important;
     position: fixed;
     bottom: 261px;
-    z-index: 1;
+    z-index: 3;
 }
-
+.button__margin0{
+    margin: 0 !important;
+}
 .footer {
     background: #000000;
     height: 238px;
