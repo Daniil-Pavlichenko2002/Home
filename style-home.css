@@ -498,8 +498,8 @@ main {
 
 .social-network {
     margin-top: 21px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .social-network a {
@@ -869,11 +869,11 @@ main {
         line-height: 20px
     }
     .services__button{
-        margin: 0;
+        margin: 23px 0 23px 0;
     }
     .services__button button{
         width: 330px;
-        margin: 23px auto;
+        margin: 0 auto;
     }
     .services__button1{
         display: none;

@@ -14,4 +14,5 @@ document.querySelector('.header__shadow').addEventListener('click', function() {
       document.querySelector('body').classList.remove('noscroll');
       document.querySelector('.footer').classList.remove('footer__fixed');
       document.querySelector('.services__button').classList.remove('button__fixed');
+      document.querySelector('.button').classList.remove('button__margin0');
 })
