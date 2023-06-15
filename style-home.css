@@ -496,12 +496,12 @@ main {
     color: #FFFFFF;
 }
 
+
 .social-network {
     margin-top: 21px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
-
 .social-network a {
     font-weight: 500;
     font-size: 18px;
@@ -885,8 +885,11 @@ main {
     }
     .social-network {
         margin-top: 31px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         width: 200px;
     }
+
     .social-network a:nth-child(2),
     .social-network a:nth-child(4){
         margin-left: 13px;
