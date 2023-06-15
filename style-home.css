@@ -94,6 +94,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-style: normal
 }
+img {
+    object-fit: cover;
+}
 .body__click
 .wrapper {
     /* max-width: 1440px; */
@@ -303,6 +306,11 @@ main {
 }
 .project__item4 {
     margin-left: 18px;
+}
+.project__item5,
+.project__item6,
+.project__item7{
+    width: 380px;
 }
 .project__item6,
 .project__item7{
